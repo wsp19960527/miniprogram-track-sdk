@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "module": "es6",
+    "esModuleInterop": true,
+    "target": "es6",
+    "declaration": true,
+    "declarationDir": "dist/types",
+    "emitDeclarationOnly": false,
+    "rootDir": "src",
+    "noImplicitAny": false,
+    "outDir": "dist",
+    "baseUrl": ".",
+    "sourceMap": false,
+    "strict": true,
+    "types": ["node", "miniprogram-api-typings"],
+    "moduleResolution": "node",
+    "skipLibCheck": true
+  
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
+}

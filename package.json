@@ -1,0 +1,41 @@
+{
+	"name": "km-miniprogram-track-sdk",
+	"version": "0.0.5",
+	"description": "小程序埋点sdk",
+	"publishConfig": {
+		"access": "public",
+		"registry": "https://registry.npmjs.org/"
+	},
+	"main": "./dist/index.js",
+	"miniprogram": "dist",
+	"files": [
+		"dist"
+	],
+	"type": "module",
+	"module": "./dist/index.js",
+	"types": "./dist/types/index.d.ts",
+	"exports": {
+		".": {
+			"import": "./dist/index.js",
+			"require": "./dist/index.umd.cjs",
+			"types": "./dist/types/index.d.ts"
+		}
+	},
+	"scripts": {
+		"test": "vitest",
+		"coverage": "vitest run --coverage",
+		"build": "vite build"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"packageManager": "pnpm@10.11.0",
+	"devDependencies": {
+		"@types/node": "^22.15.30",
+		"miniprogram-api-typings": "^4.0.7",
+		"typescript": "^5.8.3",
+		"vite": "^6.3.5",
+		"vite-plugin-dts": "^4.5.4",
+		"vitest": "^3.2.1"
+	}
+}
