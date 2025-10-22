@@ -9,6 +9,8 @@ npm install km-miniprogram-track-sdk
 ## 使用
 
 ```js
+// app.ts
+
 import { initTracker } from "km-miniprogram-track-sdk";
 const ins = initTracker({
 	reportStrategy: "threshold",

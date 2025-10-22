@@ -2,10 +2,10 @@ import type { IEventItem } from "./types/index";
 
 type CompressData = (a: IEventItem[], b: IEventItem[]) => IEventItem[];
 export const compressData: CompressData = (data, list) => {
-	return [...data, ...list];
+  return [...data, ...list];
 };
 export function getRoute() {
-	return getCurrentPages().pop();
+  return getCurrentPages().pop();
 }
 // debounce.ts
 export function debounce<T extends (...args: any[]) => any>(
@@ -30,3 +30,4 @@ export function debounce<T extends (...args: any[]) => any>(
 
   return debounced as T & { cancel: () => void }
 }
+
